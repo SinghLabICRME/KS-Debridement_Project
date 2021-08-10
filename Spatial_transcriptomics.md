@@ -40,17 +40,18 @@ NS009 <- subset(x = NS009, subset = percent.mt < 15)
 ## Data transformation and scaling using 'SCT' module in Seurat
 ```
 NS009 <- SCTransform(NS009, 
-						assay = "Spatial", 
-						vars.to.regress = "percent.mt",
-						verbose = FALSE)
+			assay = "Spatial", 
+			vars.to.regress = "percent.mt",
+			verbose = FALSE)
 ```
 ## Check if the sample meets the analysis criteria (Please see methods)
 ```
 VlnPlot(NS009, 
 		features = c("nCount_Spatial",
-					 "nFeature_Spatial",     
-					  "percent.mt"), 
-					  ncol = 3, pt.size=0)
+				"nFeature_Spatial",     
+				"percent.mt"), 
+				 ncol = 3, 
+				 pt.size=0)
 ```
 ## Spatial transcriptomic profile of signature genes for Kera1 and Kera 2 clusters.
 ```
