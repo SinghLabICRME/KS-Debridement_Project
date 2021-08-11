@@ -1,5 +1,4 @@
 ## Project: Genome-Wide Epigenetic Gene Silencing at the Wound-Edge of Chronic Wound Patients Impairs Epithelial to Mesenchymal Transition Opposing Closure
-#### Running title: " Spatial transcriptomics profile of signature genes for Kera1 and Kera2 clusters in human skin"
 #### Author: "Ahmed S Abouhashem"
 #### Date: "06/01/2020"
 
