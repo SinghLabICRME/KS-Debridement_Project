@@ -3,7 +3,7 @@
 #### Author: "Rajneesh Srivastava"
 #### Date: "06/01/2021"
 
-### Set directory for data analysis
+### Setup the directory for data analysis in R (version 4.0.4)
 ```setwd ("/path/SEN_visium_dataset/Result/")```
 
 ### Software installation
