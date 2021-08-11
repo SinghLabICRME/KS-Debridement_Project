@@ -69,5 +69,6 @@ SpatialFeaturePlot(NS009, features = Genes)
 ```
 setwd ("/path/")
 saveRDS (NS009, file = "NS009.rds")
+NS009=readRDS(file="NS009.rds")
 ```
 ## Thank you
