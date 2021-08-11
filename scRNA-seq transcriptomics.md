@@ -126,7 +126,7 @@ VlnPlot(object, split.by = 'condition', 'SMURF1')
 VlnPlot(object, split.by = 'condition', 'TWIST1')
 ```
 # If proceeding with the matrix file:
-## Files can be found under accession number GSM5364333, GSM5364334, GSM5364335 and GSM5364336 for normal skin samples and GSM5364337, GSM5364338 and GSM5364339 for skin with chronic wound
+### Files can be found under accession number GSM5364333, GSM5364334, GSM5364335 and GSM5364336 for normal skin samples and GSM5364337, GSM5364338 and GSM5364339 for skin with chronic wound
 
 ## Crate a variable for each sample folder including the 3 files (barcodes, features and the matrix)
 ```
@@ -151,8 +151,8 @@ wound3 = Read10X(wound3)
 ```
 
 ## Create a Seurat object for each sample
-### Genes expressed (>0) in less than 3 cells were filtered out
-### Create a Seurat object for each sample
+#### Genes expressed (>0) in less than 3 cells were filtered out
+#### Create a Seurat object for each sample
 
 ```
 normal1 = CreateSeuratObject(counts = normal1, min.cells = 3, min.features = 200, project = "NS2" )
