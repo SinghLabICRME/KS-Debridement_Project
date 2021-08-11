@@ -6,6 +6,15 @@
 ### Set directory for data analysis
 ```setwd ("/path/SEN_visium_dataset/Result/")```
 
+#### Software installation
+```
+install.packages("Seurat")   # version 4.0.2
+install.packages("hdf5r")
+install.packages("ggplot2")  # version 3.3.4
+install.packages("future")
+
+```
+
 ### Load libraries in R
 ```
 library(Seurat)
@@ -21,8 +30,9 @@ options(future.globals.maxSize = 15000 * 1024^2)
 ```
 
 ### Upload Data
-Note - require h5 file along with image files containing histology pics (most likely named "spatial.tar.gz" or "spatial" folder)
-#### Data uploaded in GEO with GSE ID
+#### Data were uploaded in GEO with GSE ID: GSE176417. For spatial transcriptomics data can be accessed/ downloaded via below link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM5364340
+Note - This analysis require h5 (or split files; GSM5364340) file along with image files containing histology pics (most likely named "spatial.tar.gz" or "spatial" folder)
+
 ```
 KS.dir = "/path/"                                             
 KS_data <- Load10X_Spatial(data.dir = paste0(KS.dir, NS9),
